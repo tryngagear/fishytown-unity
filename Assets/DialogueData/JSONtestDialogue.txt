@@ -1,0 +1,25 @@
+{
+    "dialogueObjects":[
+        {
+            "duid":"001",
+            "dialogue":["this, is test dialogue...testing; test", "second string"],
+            "HasResponses": true,
+            "responses": [
+                {
+                    "responseText":"yes",
+                    "nextDUID":"002"
+                },
+                {
+                    "responseText":"no",
+                    "nextDUID":"002"
+                }
+            ]
+        },
+        {
+            "duid":"002",
+            "dialogue":["this, is other test dialogue...testing; test"],
+            "HasResponses": false,
+            "responses": null
+        }
+    ]
+}
