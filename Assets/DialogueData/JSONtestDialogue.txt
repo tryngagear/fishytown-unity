@@ -2,7 +2,7 @@
     "dialogueObjects":[
         {
             "duid":"001",
-            "dialogue":["this, is test dialogue...testing; test", "second string"],
+            "dialogue":["this, is test dialogue...<b>testing</b>; test", "second string"],
             "HasResponses": true,
             "responses": [
                 {
@@ -17,7 +17,7 @@
         },
         {
             "duid":"002",
-            "dialogue":["this, is other test dialogue...testing; test"],
+            "dialogue":["this, is other <color=green> test dialogue </color>...testing; test"],
             "HasResponses": false,
             "responses": null
         }

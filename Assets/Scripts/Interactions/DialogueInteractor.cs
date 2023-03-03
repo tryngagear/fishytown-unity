@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour, IInteractable
+public class DialogueInteractor : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _prompt;
     public float speed = 1;

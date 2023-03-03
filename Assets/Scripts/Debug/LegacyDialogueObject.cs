@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "DialogueObject", menuName = "AnimalCrossingClone/DialogueObject", order = 0)]
+[CreateAssetMenu(fileName = "LegacyDialogueObject", menuName = "ScriptableObjects/DialogueObject", order = 0)]
 public class LegacyDialogueObject : ScriptableObject {
     [SerializeField] [TextArea] private string[] dialogue;
     [SerializeField] private Response[] responses;
