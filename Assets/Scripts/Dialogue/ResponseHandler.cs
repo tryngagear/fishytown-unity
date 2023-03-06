@@ -9,12 +9,12 @@ public class ResponseHandler : MonoBehaviour
     [SerializeField] private RectTransform responseButtonTemplate;
     [SerializeField] private RectTransform responseContainer;
 
-    private DialogueUI dialogueUI;
+    private DialogueManager _dialogueManager;
 
     private List<GameObject> tempResponseButtons = new List<GameObject>();
 
     private void Start() {
-        dialogueUI = GetComponent<DialogueUI>();
+        _dialogueManager = DialogueManager.Instance;
     }
 
     public void ShowResponses(Response[] responses, Dictionary<string,DialogueObject> dialogueDict){
@@ -41,6 +41,6 @@ public class ResponseHandler : MonoBehaviour
         foreach (GameObject button in tempResponseButtons){
             Destroy(button);
         }
-        dialogueUI.ShowDialogue(dialogueDict, response.NextDUID);
+        _dialogueManager.ShowDialogue(dialogueDict, response.NextDUID);
     }
 }

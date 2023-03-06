@@ -11,7 +11,7 @@ public class TypeWriter : MonoBehaviour
         {new HashSet<char>(){'.','!','?'}, 0.6f},
         {new HashSet<char>(){',',';'}, 0.3f},
     };
-
+    private Stack<char> RTS; 
     public Coroutine Run(string textToType, TMP_Text textLabel){
         return StartCoroutine(TypeText(textToType, textLabel));
     }
@@ -28,9 +28,9 @@ public class TypeWriter : MonoBehaviour
 
             for(int i = lastCharIndex; i < charIndex; i++){ //causes weird issues
                 bool isLast = i >= textToType.Length-1;
-
+                
                 textLabel.text = textToType.Substring(0, i+1);
-
+   
                 if(IsPunc(textToType[i], out float waitTime) && !isLast){
                     yield return new WaitForSeconds(waitTime);
                 }

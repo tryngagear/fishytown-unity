@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.InputSystem;
 
-public class DialogueUI : MonoBehaviour
+public class DialogueManager : Singleton<DialogueManager>
 {
     // Start is called before the first frame update
     [SerializeField] private GameObject dialogueBox;

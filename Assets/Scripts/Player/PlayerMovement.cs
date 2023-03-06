@@ -5,43 +5,46 @@ using UnityEngine;
 //controller moves player in 8 directions
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private DialogueUI dialogueUI;
     public float velocity = 5;
     public float turnSpeed = 1;
 
-    Vector2 input;
     float angle;
 
     Quaternion targetRotation;
-    Transform cam;        
 
-    public DialogueUI DialogueUI => dialogueUI;
+    private Vector2 _movement = new Vector2();
+    private InputManager _inputManager;
+
+    private DialogueManager _dialogueManager;
+
+    private Animator _animator;
 
     void Start(){
-        cam = Camera.main.transform;
+        _inputManager       = InputManager.Instance;
+        _dialogueManager    = DialogueManager.Instance;
+        _animator = GetComponent<Animator>();
     }
 
     void Update(){
         GetInput();
-
-        if(DialogueUI.isOpen) return;
-        if ((input.x == 0) && (input.y == 0) ) return;
-
         CalculateDir();
+        if(_movement != Vector2.zero) _animator.SetBool("IsWalking", true);
+        if(_movement == Vector2.zero) _animator.SetBool("IsWalking", false);
+    }
+
+    private void FixedUpdate() {
+        if(_dialogueManager.isOpen) return;
+        if (_movement == Vector2.zero) return;
         Rotate();
         Move();
     }
-    //input.x = up and down
-    //input.y = left and right
-    void GetInput(){
-        input.x = Input.GetAxisRaw("Horizontal");
-        input.y = Input.GetAxisRaw("Vertical");
-    }
 
+    void GetInput() => _movement = _inputManager.GetPlayerMovement();
+
+    //void OnMovement() => _animator.SetBool("IsWalking", true);
     //calculate angle of movement
-    void CalculateDir(){
-        angle = ((Mathf.Atan2(input.x, input.y)) * (Mathf.Rad2Deg)) + cam.eulerAngles.y;
-    }
+    void CalculateDir() => angle = ((Mathf.Atan2(_movement.x, _movement.y)) * (Mathf.Rad2Deg));
+
 
     //Rotate toward angle of movement
     void Rotate(){
