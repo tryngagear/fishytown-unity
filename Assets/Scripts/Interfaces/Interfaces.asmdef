@@ -1,0 +1,17 @@
+{
+    "name": "Interfaces",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e79630e9858fa78449c99e485ace0a20",
+        "GUID:efa45043feb7e4147a305b73b5cea642"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

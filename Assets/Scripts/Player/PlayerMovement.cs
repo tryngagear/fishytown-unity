@@ -5,7 +5,7 @@ using UnityEngine;
 //controller moves player in 8 directions
 public class PlayerMovement : MonoBehaviour
 {
-    public float velocity = 5;
+    public float movSpeed = 5;
     public float turnSpeed = 1;
 
     float angle;
@@ -17,12 +17,14 @@ public class PlayerMovement : MonoBehaviour
 
     private DialogueManager _dialogueManager;
 
+    private Rigidbody _rb;
     private Animator _animator;
 
     void Start(){
         _inputManager       = InputManager.Instance;
         _dialogueManager    = DialogueManager.Instance;
         _animator = GetComponent<Animator>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     void Update(){
@@ -39,9 +41,8 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
-    void GetInput() => _movement = _inputManager.GetPlayerMovement();
+    void GetInput() => _movement = _inputManager.GetPlayerMovement(); //at somepoint get vector stength to control dashing
 
-    //void OnMovement() => _animator.SetBool("IsWalking", true);
     //calculate angle of movement
     void CalculateDir() => angle = ((Mathf.Atan2(_movement.x, _movement.y)) * (Mathf.Rad2Deg));
 
@@ -50,9 +51,10 @@ public class PlayerMovement : MonoBehaviour
     void Rotate(){
         targetRotation = Quaternion.Euler(0, angle, 0);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime*turnSpeed);
+        //_rb.MoveRotation(); idk add this eventually maybe not important doesn't really change anything
     }
 
     void Move(){
-        transform.position += transform.forward * velocity * Time.deltaTime;
+        _rb.AddForce(transform.forward * movSpeed);
     }
 }

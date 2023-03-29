@@ -1,0 +1,48 @@
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
+public class Inventory : MonoBehaviour 
+{
+    public List<InvItemSlot> inventory = new List<InvItemSlot>();
+    private Dictionary<InvItemData, InvItemSlot> itemDict = new Dictionary<InvItemData, InvItemSlot>();
+
+    private Dictionary<int, InvItemSlot> dictInventory = new Dictionary<int, InvItemSlot>();
+    public int maxItems = 40;
+    public InvItemSlot GetItem(){
+        return null;
+    }
+
+    private void OnEnable() {
+        PickupActivator.OnItemPickup += AddItem;
+    }
+
+    private void OnDisable() {
+        PickupActivator.OnItemPickup -= AddItem;
+    }
+
+    public void AddItem(InvItemData itemData){
+        if(itemDict.TryGetValue(itemData, out InvItemSlot item)){
+            item.IncrementStack();
+            Debug.Log($"{item.itemData.itemName} total stack is now {item.StackSize}");
+            }
+        else{
+            InvItemSlot newItem = new InvItemSlot(itemData, 1);
+            inventory.Add(newItem);
+            itemDict.Add(itemData, newItem);
+            Debug.Log($"{newItem.ItemData.itemName} total stack is now {newItem.StackSize}");
+        }
+    }
+
+    public void RemoveItem(InvItemData itemData){
+        if(itemDict.TryGetValue(itemData, out InvItemSlot item)){
+            item.DecrementStack();
+            if(item.StackSize == 0){
+                inventory.Remove(item);
+                itemDict.Remove(itemData);
+            }
+        }
+    }
+
+}
