@@ -15,5 +15,5 @@ MonoBehaviour:
   IID: 1
   itemName: bleepis
   itemDesc: annoying dog
-  sprite: {fileID: -8584774588651429358, guid: adb6f439f49406e458ea94b517e77b57, type: 3}
+  sprite: {fileID: -722718223135845798, guid: adb6f439f49406e458ea94b517e77b57, type: 3}
   maxSize: 1

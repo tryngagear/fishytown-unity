@@ -16,4 +16,4 @@ MonoBehaviour:
   itemName: Octo
   itemDesc: annoying dog
   sprite: {fileID: 7469821593569386494, guid: adb6f439f49406e458ea94b517e77b57, type: 3}
-  maxSize: 4
+  maxSize: 1

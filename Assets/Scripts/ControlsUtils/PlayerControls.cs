@@ -44,6 +44,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""60edf798-19b2-4780-86e5-8df6bac13375"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -123,6 +132,28 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24d76b1d-b08b-4d01-8750-ed9446ed5cab"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1cbcf75e-9d37-4612-a987-80a8409da94c"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""OpenMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -133,6 +164,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_PlayerActMap = asset.FindActionMap("PlayerActMap", throwIfNotFound: true);
         m_PlayerActMap_Movement = m_PlayerActMap.FindAction("Movement", throwIfNotFound: true);
         m_PlayerActMap_Interact = m_PlayerActMap.FindAction("Interact", throwIfNotFound: true);
+        m_PlayerActMap_OpenMenu = m_PlayerActMap.FindAction("OpenMenu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -194,12 +226,14 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private IPlayerActMapActions m_PlayerActMapActionsCallbackInterface;
     private readonly InputAction m_PlayerActMap_Movement;
     private readonly InputAction m_PlayerActMap_Interact;
+    private readonly InputAction m_PlayerActMap_OpenMenu;
     public struct PlayerActMapActions
     {
         private @PlayerControls m_Wrapper;
         public PlayerActMapActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_PlayerActMap_Movement;
         public InputAction @Interact => m_Wrapper.m_PlayerActMap_Interact;
+        public InputAction @OpenMenu => m_Wrapper.m_PlayerActMap_OpenMenu;
         public InputActionMap Get() { return m_Wrapper.m_PlayerActMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -215,6 +249,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Interact.started -= m_Wrapper.m_PlayerActMapActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerActMapActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerActMapActionsCallbackInterface.OnInteract;
+                @OpenMenu.started -= m_Wrapper.m_PlayerActMapActionsCallbackInterface.OnOpenMenu;
+                @OpenMenu.performed -= m_Wrapper.m_PlayerActMapActionsCallbackInterface.OnOpenMenu;
+                @OpenMenu.canceled -= m_Wrapper.m_PlayerActMapActionsCallbackInterface.OnOpenMenu;
             }
             m_Wrapper.m_PlayerActMapActionsCallbackInterface = instance;
             if (instance != null)
@@ -225,6 +262,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @OpenMenu.started += instance.OnOpenMenu;
+                @OpenMenu.performed += instance.OnOpenMenu;
+                @OpenMenu.canceled += instance.OnOpenMenu;
             }
         }
     }
@@ -233,5 +273,6 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnOpenMenu(InputAction.CallbackContext context);
     }
 }

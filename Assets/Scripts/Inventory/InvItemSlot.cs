@@ -52,6 +52,15 @@ public class InvItemSlot
     	_stackSize -= amount;
     }
 
+    public void AssignSlot(InvItemSlot inSlot){
+        if(_itemData == inSlot.itemData) AddToStack(inSlot.stackSize);
+        else
+        {
+            _itemData = inSlot.itemData;
+            _stackSize = 0;
+            AddToStack(inSlot.stackSize);
+        }
+    }
     public void IncrementStack(){
         _stackSize++;
     }

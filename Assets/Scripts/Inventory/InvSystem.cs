@@ -23,9 +23,6 @@ public class InvSystem
             _inventorySlots.Add(new InvItemSlot());
     }
 
-    public InvItemSlot GetItem(){
-        return null;
-    }
 
     private void OnEnable() {
         PickupActivator.OnItemPickup += AddItem;

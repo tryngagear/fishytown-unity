@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //controller moves player in 8 directions
+// IN NEED OF EVENTUAL REWORK
 public class PlayerMovement : MonoBehaviour
 {
     public float movSpeed = 5;
@@ -55,6 +56,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Move(){
-        _rb.AddForce(transform.forward * movSpeed);
+        _rb.AddForce(transform.forward * movSpeed); //MAKE THIS RELY ON TIME
     }
 }
