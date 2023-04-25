@@ -1,0 +1,17 @@
+{
+    "name": "Villager",
+    "rootNamespace": "",
+    "references": [
+        "GUID:28d27981ff79435428a344dab957e28a",
+        "GUID:1d4ecf3b853822f4aa49711a7c1df2e8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

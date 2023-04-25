@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Need", menuName = "FishyTown/Life/Need", order = 1)]
+[CreateAssetMenu(fileName = "Need", menuName = "ScriptableObjects/Life/Need", order = 1)]
 public class NeedDef : ScriptableObject
 {
     [SerializeField] public string needName;

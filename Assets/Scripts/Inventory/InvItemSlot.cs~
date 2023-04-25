@@ -1,0 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+
+[Serializable]
+public class InvItemSlot
+{
+    
+    [SerializeField] private InvItemData itemData;
+    [SerializeField] private int stackSize;
+    [SerializeField] private bool placeable;
+
+    public InvItemData ItemData => itemData;
+    public int StackSize => stackSize;
+    public bool Placeable => placeable;
+
+    public InvItemSlot(InvItemData item, int amount){
+        itemData = item;
+	stackSize = amount;
+    }
+
+    public InvItemSlot(){
+	ClearSlot();
+    }
+
+    public void ClearSlot(){
+    	itemData = null;
+	stackSize = -1;
+    }
+
+    public void AddToStack(int amount){
+    	stackSize += amount;
+    }
+
+    public void RemoveFromStack(int amount){
+    	stackSize -= amount;
+    }
+
+    public void IncrementStack(){
+        stackSize++;
+    }
+
+    public void DecrementStack(){
+        stackSize--;
+    }
+}
