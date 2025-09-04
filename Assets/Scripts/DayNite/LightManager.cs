@@ -13,11 +13,13 @@ public class LightManager : MonoBehaviour
     private void Update() {
         if(lightingPresets == null)
             return;
-        if(Application.isPlaying){
+        //if(Application.isPlaying){
             TimeOfDay += Time.deltaTime * TimeRatio;
             TimeOfDay %= 24;
             UpdateLighting(TimeOfDay/24.0f);
-        }
+            Shader.SetGlobalVector("_SunDirection", dirLight.transform.forward);
+            Shader.SetGlobalVector("_SunMoonColor", dirLight.color);
+        //}
     }
     private void UpdateLighting(float timePercent){
         RenderSettings.ambientLight = lightingPresets.AmbientColor.Evaluate(timePercent);
@@ -45,4 +47,6 @@ public class LightManager : MonoBehaviour
             }
         }
     }
+
+
 }

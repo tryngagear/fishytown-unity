@@ -10,7 +10,7 @@ public class JSONReader : MonoBehaviour
     [System.Serializable]
     public struct DialogueList
     {
-    public List<DialogueObject> dialogueObjects;
+        public List<DialogueObject> dialogueObjects;
     }
 
     public DialogueList dialogueList = new DialogueList();

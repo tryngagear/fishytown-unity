@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ForestFloor
-  m_Shader: {fileID: 4800000, guid: b793460e2a730b942a303eeca1c082f6, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5ab7f78fa10809447b93c42625495122, type: 3}
   m_ValidKeywords:
   - _ENVIRONMENTREFLECTIONS_OFF
   - _NORMALMAP
@@ -34,6 +34,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: 0045db466859e5542bee7751d9fff226, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -109,7 +113,9 @@ Material:
     - _Amp: 1
     - _AnisoSpecular: 0
     - _Blend: 0
+    - _BlendOp: 0
     - _BumpScale: 0
+    - _ClearCoat: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -149,6 +155,7 @@ Material:
     - _Reflections: 0
     - _RimAmount: 0.716
     - _RimThreshold: 0.1
+    - _SampleGI: 0
     - _ShadowMask: 0
     - _Shininess: 0
     - _Smoothness: 0.75

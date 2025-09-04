@@ -14,31 +14,31 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
+  m_Fog: 1
+  m_FogColor: {r: 0.62665355, g: 0.62665355, b: 0.62665355, a: 1}
+  m_FogMode: 2
   m_FogDensity: 0.01
-  m_LinearFogStart: 0
-  m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
-  m_FlareStrength: 1
-  m_FlareFadeSpeed: 3
+  m_LinearFogStart: 10
+  m_LinearFogEnd: 10.01
+  m_AmbientSkyColor: {r: 0.7289144, g: 0.7167519, b: 0.32005304, a: 1}
+  m_AmbientEquatorColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientGroundColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientIntensity: 2.38
+  m_AmbientMode: 1
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f08640c90aebd664cabc31ea5fc1bbe5, type: 2}
+  m_HaloStrength: 0
+  m_FlareStrength: 0
+  m_FlareFadeSpeed: 0
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_DefaultReflectionResolution: 16
+  m_ReflectionBounces: 2
+  m_ReflectionIntensity: 0.144
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.025960864, g: 0.03250283, b: 0.04419689, a: 0.144}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -70,7 +70,7 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
-    m_ReflectionCompression: 2
+    m_ReflectionCompression: 0
     m_MixedBakeMode: 2
     m_BakeBackend: 1
     m_PVRSampling: 1
@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 843c4e25f68fe4443b1891a916471334,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: ce471ee25a49ee846a3345c2ae28c111,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -123,6 +125,2263 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &24559308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.601
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.062
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6739112547798333705, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6704409571421530897, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6452266432751415832, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6196263002185204537, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5324163361889194871, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5228140831487962705, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4492083701978322321, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3192499725319893295, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 268600531463226612, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Name
+      value: Kokomi
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464559829030040726, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2595880195381855276, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573940403621388067, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285137884745541822, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528860797864257434, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786313488273642606, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785063471752136558, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623044892918116994, guid: 365aee7e49ec3db4ea0d010035f7d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 365aee7e49ec3db4ea0d010035f7d924, type: 3}
+--- !u!1 &54651170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54651173}
+  - component: {fileID: 54651172}
+  - component: {fileID: 54651171}
+  m_Layer: 0
+  m_Name: MapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &54651171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54651170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2570745e94b08054fa4ecf9898e8261f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JsonMapText: {fileID: 4900000, guid: ca4c2425c47cd5748ae7db62caf10664, type: 3}
+  JsonDictList: {fileID: 4900000, guid: 0957d96cfd7267241b38fca234929811, type: 3}
+  bguRefList:
+    list:
+    - BGUID: EmptyA
+      meshRef: NAN
+      rotID: -1
+      weight: 0.01
+      NEGX:
+      - EmptyA
+      POSX:
+      - EmptyA
+      NEGY:
+      - EmptyA
+      - Grass_0
+      - Sand_0
+      - Test_0
+      - Test_90
+      - Test_180
+      - Test_270
+      POSY:
+      - EmptyA
+      NEGZ:
+      - EmptyA
+      POSZ:
+      - EmptyA
+    - BGUID: EmptyB
+      meshRef: NAN
+      rotID: -1
+      weight: 0.01
+      NEGX:
+      - EmptyB
+      POSX:
+      - EmptyB
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyB
+      - Grass_0
+      - Sand_0
+      - Test_0
+      - Test_90
+      - Test_180
+      - Test_270
+      NEGZ:
+      - EmptyB
+      POSZ:
+      - EmptyB
+    - BGUID: Grass_0
+      meshRef: Grass
+      rotID: 0
+      weight: 1
+      NEGX:
+      - Grass_0
+      - Test_90
+      POSX:
+      - Grass_0
+      - Test_270
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Grass_0
+      - Test_180
+      POSZ:
+      - Grass_0
+      - Test_0
+    - BGUID: Sand_0
+      meshRef: Sand
+      rotID: 0
+      weight: 1
+      NEGX:
+      - Sand_0
+      - Test_270
+      POSX:
+      - Sand_0
+      - Test_90
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Sand_0
+      - Test_0
+      POSZ:
+      - Sand_0
+      - Test_180
+    - BGUID: Test_0
+      meshRef: Test
+      rotID: 0
+      weight: 0.5
+      NEGX:
+      - Test_0
+      POSX:
+      - Test_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Grass_0
+      - Test_180
+      POSZ:
+      - Sand_0
+      - Test_180
+    - BGUID: Test_90
+      meshRef: Test
+      rotID: 90
+      weight: 0.5
+      NEGX:
+      - Sand_0
+      - Test_270
+      POSX:
+      - Grass_0
+      - Test_270
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Test_90
+      POSZ:
+      - Test_90
+    - BGUID: Test_180
+      meshRef: Test
+      rotID: 180
+      weight: 0.5
+      NEGX:
+      - Test_180
+      POSX:
+      - Test_180
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Sand_0
+      - Test_0
+      POSZ:
+      - Grass_0
+      - Test_0
+    - BGUID: Test_270
+      meshRef: Test
+      rotID: 270
+      weight: 0.5
+      NEGX:
+      - Grass_0
+      - Test_90
+      POSX:
+      - Sand_0
+      - Test_90
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Test_270
+      POSZ:
+      - Test_270
+  itemDict:
+    list:
+    - Key: NAN
+      Val: 
+    - Key: Grass
+      Val: Assets/Prefabs/TilesNew/Grass.prefab
+    - Key: Sand
+      Val: Assets/Prefabs/TilesNew/Sand.prefab
+    - Key: Test
+      Val: Assets/Prefabs/TestTiles/Green.prefab
+--- !u!114 &54651172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54651170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f47d86bc35f49468de17f9bdd81437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bguRefList:
+  - BGUID: EmptyA
+    meshRef: NAN
+    rotID: -1
+    weight: 0.01
+    NEGX:
+    - EmptyA
+    POSX:
+    - EmptyA
+    NEGY:
+    - EmptyA
+    - Grass_0
+    - Sand_0
+    - Test_0
+    - Test_90
+    - Test_180
+    - Test_270
+    POSY:
+    - EmptyA
+    NEGZ:
+    - EmptyA
+    POSZ:
+    - EmptyA
+  - BGUID: EmptyB
+    meshRef: NAN
+    rotID: -1
+    weight: 0.01
+    NEGX:
+    - EmptyB
+    POSX:
+    - EmptyB
+    NEGY:
+    - EmptyB
+    POSY:
+    - EmptyB
+    - Grass_0
+    - Sand_0
+    - Test_0
+    - Test_90
+    - Test_180
+    - Test_270
+    NEGZ:
+    - EmptyB
+    POSZ:
+    - EmptyB
+  - BGUID: Grass_0
+    meshRef: Grass
+    rotID: 0
+    weight: 1
+    NEGX:
+    - Grass_0
+    - Test_90
+    POSX:
+    - Grass_0
+    - Test_270
+    NEGY:
+    - EmptyB
+    POSY:
+    - EmptyA
+    NEGZ:
+    - Grass_0
+    - Test_180
+    POSZ:
+    - Grass_0
+    - Test_0
+  - BGUID: Sand_0
+    meshRef: Sand
+    rotID: 0
+    weight: 1
+    NEGX:
+    - Sand_0
+    - Test_270
+    POSX:
+    - Sand_0
+    - Test_90
+    NEGY:
+    - EmptyB
+    POSY:
+    - EmptyA
+    NEGZ:
+    - Sand_0
+    - Test_0
+    POSZ:
+    - Sand_0
+    - Test_180
+  - BGUID: Test_0
+    meshRef: Test
+    rotID: 0
+    weight: 0.5
+    NEGX:
+    - Test_0
+    POSX:
+    - Test_0
+    NEGY:
+    - EmptyB
+    POSY:
+    - EmptyA
+    NEGZ:
+    - Grass_0
+    - Test_180
+    POSZ:
+    - Sand_0
+    - Test_180
+  - BGUID: Test_90
+    meshRef: Test
+    rotID: 90
+    weight: 0.5
+    NEGX:
+    - Sand_0
+    - Test_270
+    POSX:
+    - Grass_0
+    - Test_270
+    NEGY:
+    - EmptyB
+    POSY:
+    - EmptyA
+    NEGZ:
+    - Test_90
+    POSZ:
+    - Test_90
+  - BGUID: Test_180
+    meshRef: Test
+    rotID: 180
+    weight: 0.5
+    NEGX:
+    - Test_180
+    POSX:
+    - Test_180
+    NEGY:
+    - EmptyB
+    POSY:
+    - EmptyA
+    NEGZ:
+    - Sand_0
+    - Test_0
+    POSZ:
+    - Grass_0
+    - Test_0
+  - BGUID: Test_270
+    meshRef: Test
+    rotID: 270
+    weight: 0.5
+    NEGX:
+    - Grass_0
+    - Test_90
+    POSX:
+    - Sand_0
+    - Test_90
+    NEGY:
+    - EmptyB
+    POSY:
+    - EmptyA
+    NEGZ:
+    - Test_270
+    POSZ:
+    - Test_270
+  MGJR: {fileID: 54651171}
+  MissDictError: {fileID: 8399327609765995488, guid: 50ed082d549b47f4fb7d5b7a0b81a7f5,
+    type: 3}
+  NoTileError: {fileID: 9086884383784561823, guid: 08d35265c7e9224448211f147998860c,
+    type: 3}
+  seed: -1097263454
+--- !u!4 &54651173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54651170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &79900394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 79900396}
+  - component: {fileID: 79900395}
+  m_Layer: 0
+  m_Name: MapGridCompiler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &79900395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79900394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d715019173db5194986d6ada20a37bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  protoTypeList:
+  - {fileID: 11400000, guid: 5d421d0433bbbdf41b55aa769a0e460b, type: 2}
+  - {fileID: 11400000, guid: c53950891afa5664989ea99d61c42613, type: 2}
+  - {fileID: 11400000, guid: a12348b7878fa8c4b81c6b92ded3ccfd, type: 2}
+  - {fileID: 11400000, guid: 8d9df1f73f6b29b4ca15d25af5393058, type: 2}
+  - {fileID: 11400000, guid: 7bad2935b228901469ec746fd1ca7c9a, type: 2}
+  - {fileID: 11400000, guid: 7d220c6b7f6a3064b9e0b411c77c7eb2, type: 2}
+  - {fileID: 11400000, guid: ca8650b8cd48bd246aaaa133a2460949, type: 2}
+  FileOutputName: /island.json
+  DictFileName: /1d.json
+  refList:
+    list:
+    - BGUID: EmptyA
+      meshRef: NAN
+      rotID: -1
+      weight: 0.01
+      NEGX:
+      - EmptyA
+      - Cliff2Grass_180
+      - Cliff2Wall_180
+      - Island_Coast_180
+      - coast_curved_180
+      - coast_curved_270
+      POSX:
+      - EmptyA
+      - Cliff2Grass_0
+      - Cliff2Wall_0
+      - Island_Coast_0
+      - coast_curved_0
+      - coast_curved_90
+      NEGY:
+      - EmptyA
+      - Island_Coast_0
+      - Island_Coast_90
+      - Island_Coast_180
+      - Island_Coast_270
+      - coast_curved_0
+      - coast_curved_90
+      - coast_curved_180
+      - coast_curved_270
+      - incurve_0
+      - incurve_90
+      - incurve_180
+      - incurve_270
+      - Island_Grass_0
+      POSY:
+      - EmptyA
+      NEGZ:
+      - EmptyA
+      - Cliff2Grass_90
+      - Cliff2Wall_90
+      - Island_Coast_90
+      - coast_curved_90
+      - coast_curved_180
+      POSZ:
+      - EmptyA
+      - Cliff2Grass_270
+      - Cliff2Wall_270
+      - Island_Coast_270
+      - coast_curved_0
+      - coast_curved_270
+    - BGUID: EmptyB
+      meshRef: NAN
+      rotID: -1
+      weight: 0.01
+      NEGX:
+      - EmptyB
+      - Cliff2Wall_0
+      - Grass2Cliff_0
+      POSX:
+      - EmptyB
+      - Cliff2Wall_180
+      - Grass2Cliff_180
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyB
+      - Island_Coast_0
+      - Island_Coast_90
+      - Island_Coast_180
+      - Island_Coast_270
+      - coast_curved_0
+      - coast_curved_90
+      - coast_curved_180
+      - coast_curved_270
+      - incurve_0
+      - incurve_90
+      - incurve_180
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_0
+      - Grass2Cliff_90
+      - Grass2Cliff_180
+      - Grass2Cliff_270
+      NEGZ:
+      - EmptyB
+      - Cliff2Wall_270
+      - Grass2Cliff_270
+      POSZ:
+      - EmptyB
+      - Cliff2Wall_90
+      - Grass2Cliff_90
+    - BGUID: Cliff2Grass_0
+      meshRef: CLIFF2GRASS
+      rotID: 0
+      weight: 1
+      NEGX:
+      - EmptyA
+      POSX:
+      - Cliff2Grass_180
+      - Island_Coast_180
+      - incurve_180
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_0
+      NEGY:
+      - Cliff2Grass_0
+      - Cliff2Wall_0
+      - Grass2Cliff_0
+      POSY:
+      - Cliff2Grass_0
+      - Cliff2Wall_0
+      NEGZ:
+      - Cliff2Grass_0
+      POSZ:
+      - Cliff2Grass_0
+    - BGUID: Cliff2Grass_90
+      meshRef: CLIFF2GRASS
+      rotID: 90
+      weight: 1
+      NEGX:
+      - Cliff2Grass_90
+      POSX:
+      - Cliff2Grass_90
+      NEGY:
+      - Cliff2Grass_90
+      - Cliff2Wall_90
+      - Grass2Cliff_90
+      POSY:
+      - Cliff2Grass_90
+      - Cliff2Wall_90
+      NEGZ:
+      - Cliff2Grass_270
+      - Island_Coast_270
+      - incurve_0
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_90
+      POSZ:
+      - EmptyA
+    - BGUID: Cliff2Grass_180
+      meshRef: CLIFF2GRASS
+      rotID: 180
+      weight: 1
+      NEGX:
+      - Cliff2Grass_0
+      - Island_Coast_0
+      - incurve_0
+      - incurve_90
+      - Island_Grass_0
+      - Grass2Cliff_180
+      POSX:
+      - EmptyA
+      NEGY:
+      - Cliff2Grass_180
+      - Cliff2Wall_180
+      - Grass2Cliff_180
+      POSY:
+      - Cliff2Grass_180
+      - Cliff2Wall_180
+      NEGZ:
+      - Cliff2Grass_180
+      POSZ:
+      - Cliff2Grass_180
+    - BGUID: Cliff2Grass_270
+      meshRef: CLIFF2GRASS
+      rotID: 270
+      weight: 1
+      NEGX:
+      - Cliff2Grass_270
+      POSX:
+      - Cliff2Grass_270
+      NEGY:
+      - Cliff2Grass_270
+      - Cliff2Wall_270
+      - Grass2Cliff_270
+      POSY:
+      - Cliff2Grass_270
+      - Cliff2Wall_270
+      NEGZ:
+      - EmptyA
+      POSZ:
+      - Cliff2Grass_90
+      - Island_Coast_90
+      - incurve_90
+      - incurve_180
+      - Island_Grass_0
+      - Grass2Cliff_270
+    - BGUID: Cliff2Wall_0
+      meshRef: CLIFF2WALL
+      rotID: 0
+      weight: 1
+      NEGX:
+      - EmptyA
+      POSX:
+      - EmptyB
+      NEGY:
+      - Cliff2Grass_0
+      - Cliff2Wall_0
+      - Grass2Cliff_0
+      POSY:
+      - Cliff2Grass_0
+      - Cliff2Wall_0
+      NEGZ:
+      - Cliff2Wall_0
+      - Cliff2Wall_180
+      POSZ:
+      - Cliff2Wall_0
+      - Cliff2Wall_180
+    - BGUID: Cliff2Wall_90
+      meshRef: CLIFF2WALL
+      rotID: 90
+      weight: 1
+      NEGX:
+      - Cliff2Wall_90
+      - Cliff2Wall_270
+      POSX:
+      - Cliff2Wall_90
+      - Cliff2Wall_270
+      NEGY:
+      - Cliff2Grass_90
+      - Cliff2Wall_90
+      - Grass2Cliff_90
+      POSY:
+      - Cliff2Grass_90
+      - Cliff2Wall_90
+      NEGZ:
+      - EmptyB
+      POSZ:
+      - EmptyA
+    - BGUID: Cliff2Wall_180
+      meshRef: CLIFF2WALL
+      rotID: 180
+      weight: 1
+      NEGX:
+      - EmptyB
+      POSX:
+      - EmptyA
+      NEGY:
+      - Cliff2Grass_180
+      - Cliff2Wall_180
+      - Grass2Cliff_180
+      POSY:
+      - Cliff2Grass_180
+      - Cliff2Wall_180
+      NEGZ:
+      - Cliff2Wall_0
+      - Cliff2Wall_180
+      POSZ:
+      - Cliff2Wall_0
+      - Cliff2Wall_180
+    - BGUID: Cliff2Wall_270
+      meshRef: CLIFF2WALL
+      rotID: 270
+      weight: 1
+      NEGX:
+      - Cliff2Wall_90
+      - Cliff2Wall_270
+      POSX:
+      - Cliff2Wall_90
+      - Cliff2Wall_270
+      NEGY:
+      - Cliff2Grass_270
+      - Cliff2Wall_270
+      - Grass2Cliff_270
+      POSY:
+      - Cliff2Grass_270
+      - Cliff2Wall_270
+      NEGZ:
+      - EmptyA
+      POSZ:
+      - EmptyB
+    - BGUID: Island_Coast_0
+      meshRef: COAST_A
+      rotID: 0
+      weight: 1
+      NEGX:
+      - EmptyA
+      POSX:
+      - Cliff2Grass_180
+      - Island_Coast_180
+      - incurve_180
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Island_Coast_0
+      - coast_curved_0
+      - incurve_90
+      POSZ:
+      - Island_Coast_0
+      - coast_curved_90
+      - incurve_0
+    - BGUID: Island_Coast_90
+      meshRef: COAST_A
+      rotID: 90
+      weight: 1
+      NEGX:
+      - Island_Coast_90
+      - coast_curved_90
+      - incurve_180
+      POSX:
+      - Island_Coast_90
+      - coast_curved_180
+      - incurve_90
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Cliff2Grass_270
+      - Island_Coast_270
+      - incurve_0
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_90
+      POSZ:
+      - EmptyA
+    - BGUID: Island_Coast_180
+      meshRef: COAST_A
+      rotID: 180
+      weight: 1
+      NEGX:
+      - Cliff2Grass_0
+      - Island_Coast_0
+      - incurve_0
+      - incurve_90
+      - Island_Grass_0
+      - Grass2Cliff_180
+      POSX:
+      - EmptyA
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Island_Coast_180
+      - coast_curved_270
+      - incurve_180
+      POSZ:
+      - Island_Coast_180
+      - coast_curved_180
+      - incurve_270
+    - BGUID: Island_Coast_270
+      meshRef: COAST_A
+      rotID: 270
+      weight: 1
+      NEGX:
+      - Island_Coast_270
+      - coast_curved_0
+      - incurve_270
+      POSX:
+      - Island_Coast_270
+      - coast_curved_270
+      - incurve_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - EmptyA
+      POSZ:
+      - Cliff2Grass_90
+      - Island_Coast_90
+      - incurve_90
+      - incurve_180
+      - Island_Grass_0
+      - Grass2Cliff_270
+    - BGUID: coast_curved_0
+      meshRef: COAST_CURVED
+      rotID: 0
+      weight: 1
+      NEGX:
+      - EmptyA
+      POSX:
+      - Island_Coast_270
+      - coast_curved_270
+      - incurve_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - EmptyA
+      POSZ:
+      - Island_Coast_0
+      - coast_curved_90
+      - incurve_0
+    - BGUID: coast_curved_90
+      meshRef: COAST_CURVED
+      rotID: 90
+      weight: 1
+      NEGX:
+      - EmptyA
+      POSX:
+      - Island_Coast_90
+      - coast_curved_180
+      - incurve_90
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Island_Coast_0
+      - coast_curved_0
+      - incurve_90
+      POSZ:
+      - EmptyA
+    - BGUID: coast_curved_180
+      meshRef: COAST_CURVED
+      rotID: 180
+      weight: 1
+      NEGX:
+      - Island_Coast_90
+      - coast_curved_90
+      - incurve_180
+      POSX:
+      - EmptyA
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Island_Coast_180
+      - coast_curved_270
+      - incurve_180
+      POSZ:
+      - EmptyA
+    - BGUID: coast_curved_270
+      meshRef: COAST_CURVED
+      rotID: 270
+      weight: 1
+      NEGX:
+      - Island_Coast_270
+      - coast_curved_0
+      - incurve_270
+      POSX:
+      - EmptyA
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - EmptyA
+      POSZ:
+      - Island_Coast_180
+      - coast_curved_180
+      - incurve_270
+    - BGUID: incurve_0
+      meshRef: CURVE_IN
+      rotID: 0
+      weight: 1
+      NEGX:
+      - Island_Coast_270
+      - coast_curved_0
+      - incurve_270
+      POSX:
+      - Cliff2Grass_180
+      - Island_Coast_180
+      - incurve_180
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Island_Coast_0
+      - coast_curved_0
+      - incurve_90
+      POSZ:
+      - Cliff2Grass_90
+      - Island_Coast_90
+      - incurve_90
+      - incurve_180
+      - Island_Grass_0
+      - Grass2Cliff_270
+    - BGUID: incurve_90
+      meshRef: CURVE_IN
+      rotID: 90
+      weight: 1
+      NEGX:
+      - Island_Coast_90
+      - coast_curved_90
+      - incurve_180
+      POSX:
+      - Cliff2Grass_180
+      - Island_Coast_180
+      - incurve_180
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Cliff2Grass_270
+      - Island_Coast_270
+      - incurve_0
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_90
+      POSZ:
+      - Island_Coast_0
+      - coast_curved_90
+      - incurve_0
+    - BGUID: incurve_180
+      meshRef: CURVE_IN
+      rotID: 180
+      weight: 1
+      NEGX:
+      - Cliff2Grass_0
+      - Island_Coast_0
+      - incurve_0
+      - incurve_90
+      - Island_Grass_0
+      - Grass2Cliff_180
+      POSX:
+      - Island_Coast_90
+      - coast_curved_180
+      - incurve_90
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Cliff2Grass_270
+      - Island_Coast_270
+      - incurve_0
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_90
+      POSZ:
+      - Island_Coast_180
+      - coast_curved_180
+      - incurve_270
+    - BGUID: incurve_270
+      meshRef: CURVE_IN
+      rotID: 270
+      weight: 1
+      NEGX:
+      - Cliff2Grass_0
+      - Island_Coast_0
+      - incurve_0
+      - incurve_90
+      - Island_Grass_0
+      - Grass2Cliff_180
+      POSX:
+      - Island_Coast_270
+      - coast_curved_270
+      - incurve_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Island_Coast_180
+      - coast_curved_270
+      - incurve_180
+      POSZ:
+      - Cliff2Grass_90
+      - Island_Coast_90
+      - incurve_90
+      - incurve_180
+      - Island_Grass_0
+      - Grass2Cliff_270
+    - BGUID: Island_Grass_0
+      meshRef: GRASS_A
+      rotID: 0
+      weight: 1
+      NEGX:
+      - Cliff2Grass_0
+      - Island_Coast_0
+      - incurve_0
+      - incurve_90
+      - Island_Grass_0
+      - Grass2Cliff_180
+      POSX:
+      - Cliff2Grass_180
+      - Island_Coast_180
+      - incurve_180
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - EmptyA
+      NEGZ:
+      - Cliff2Grass_270
+      - Island_Coast_270
+      - incurve_0
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_90
+      POSZ:
+      - Cliff2Grass_90
+      - Island_Coast_90
+      - incurve_90
+      - incurve_180
+      - Island_Grass_0
+      - Grass2Cliff_270
+    - BGUID: Grass2Cliff_0
+      meshRef: GRASS2CLIFF
+      rotID: 0
+      weight: 1
+      NEGX:
+      - Cliff2Grass_0
+      - Island_Coast_0
+      - incurve_0
+      - incurve_90
+      - Island_Grass_0
+      - Grass2Cliff_180
+      POSX:
+      - EmptyB
+      NEGY:
+      - EmptyB
+      POSY:
+      - Cliff2Grass_0
+      - Cliff2Wall_0
+      NEGZ:
+      - Grass2Cliff_0
+      POSZ:
+      - Grass2Cliff_0
+    - BGUID: Grass2Cliff_90
+      meshRef: GRASS2CLIFF
+      rotID: 90
+      weight: 1
+      NEGX:
+      - Grass2Cliff_90
+      POSX:
+      - Grass2Cliff_90
+      NEGY:
+      - EmptyB
+      POSY:
+      - Cliff2Grass_90
+      - Cliff2Wall_90
+      NEGZ:
+      - EmptyB
+      POSZ:
+      - Cliff2Grass_90
+      - Island_Coast_90
+      - incurve_90
+      - incurve_180
+      - Island_Grass_0
+      - Grass2Cliff_270
+    - BGUID: Grass2Cliff_180
+      meshRef: GRASS2CLIFF
+      rotID: 180
+      weight: 1
+      NEGX:
+      - EmptyB
+      POSX:
+      - Cliff2Grass_180
+      - Island_Coast_180
+      - incurve_180
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_0
+      NEGY:
+      - EmptyB
+      POSY:
+      - Cliff2Grass_180
+      - Cliff2Wall_180
+      NEGZ:
+      - Grass2Cliff_180
+      POSZ:
+      - Grass2Cliff_180
+    - BGUID: Grass2Cliff_270
+      meshRef: GRASS2CLIFF
+      rotID: 270
+      weight: 1
+      NEGX:
+      - Grass2Cliff_270
+      POSX:
+      - Grass2Cliff_270
+      NEGY:
+      - EmptyB
+      POSY:
+      - Cliff2Grass_270
+      - Cliff2Wall_270
+      NEGZ:
+      - Cliff2Grass_270
+      - Island_Coast_270
+      - incurve_0
+      - incurve_270
+      - Island_Grass_0
+      - Grass2Cliff_90
+      POSZ:
+      - EmptyB
+  dictRef:
+    list:
+    - Key: NAN
+      Val: 
+    - Key: CLIFF2GRASS
+      Val: Assets/FBX/GridTilesTest/FloorA.prefab
+    - Key: CLIFF2WALL
+      Val: Assets/FBX/GridTilesTest/FloorA.prefab
+    - Key: COAST_A
+      Val: Assets/FBX/GridTilesTest/FloorA.prefab
+    - Key: COAST_CURVED
+      Val: Assets/FBX/GridTilesTest/FloorA.prefab
+    - Key: CURVE_IN
+      Val: Assets/FBX/GridTilesTest/FloorA.prefab
+    - Key: GRASS_A
+      Val: Assets/FBX/GridTilesTest/FloorA.prefab
+    - Key: GRASS2CLIFF
+      Val: Assets/FBX/GridTilesTest/FloorA.prefab
+  typeData:
+  - BGUID: EmptyA
+    meshRef: NAN
+    rotationID: -1
+    weight: 0.01
+    sockets:
+      posX:
+        sym: 0
+        polarity: 0
+        FID: NAN_A
+      negX:
+        sym: 0
+        polarity: 0
+        FID: NAN_A
+      posY:
+        sym: 0
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 0
+        polarity: 0
+        FID: NAN_A
+      posZ:
+        sym: 0
+        polarity: 0
+        FID: NAN_A
+      negZ:
+        sym: 0
+        polarity: 0
+        FID: NAN_A
+  - BGUID: EmptyB
+    meshRef: NAN
+    rotationID: -1
+    weight: 0.01
+    sockets:
+      posX:
+        sym: 0
+        polarity: 0
+        FID: NAN_B
+      negX:
+        sym: 0
+        polarity: 0
+        FID: NAN_B
+      posY:
+        sym: 0
+        polarity: 0
+        FID: NAN_B
+      negY:
+        sym: 0
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 0
+        FID: NAN_B
+      negZ:
+        sym: 0
+        polarity: 0
+        FID: NAN_B
+  - BGUID: Cliff2Grass_0
+    meshRef: CLIFF2GRASS
+    rotationID: 0
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posZ:
+        sym: 0
+        polarity: 1
+        FID: CLIFF_E
+      negZ:
+        sym: 0
+        polarity: 0
+        FID: CLIFF_E
+  - BGUID: Cliff2Grass_90
+    meshRef: CLIFF2GRASS
+    rotationID: 90
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 1
+        FID: CLIFF_E
+      negX:
+        sym: 0
+        polarity: 0
+        FID: CLIFF_E
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+  - BGUID: Cliff2Grass_180
+    meshRef: CLIFF2GRASS
+    rotationID: 180
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posZ:
+        sym: 0
+        polarity: 0
+        FID: CLIFF_E
+      negZ:
+        sym: 0
+        polarity: 1
+        FID: CLIFF_E
+  - BGUID: Cliff2Grass_270
+    meshRef: CLIFF2GRASS
+    rotationID: 270
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 0
+        FID: CLIFF_E
+      negX:
+        sym: 0
+        polarity: 1
+        FID: CLIFF_E
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+  - BGUID: Cliff2Wall_0
+    meshRef: CLIFF2WALL
+    rotationID: 0
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      negX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+  - BGUID: Cliff2Wall_90
+    meshRef: CLIFF2WALL
+    rotationID: 90
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negX:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+  - BGUID: Cliff2Wall_180
+    meshRef: CLIFF2WALL
+    rotationID: 180
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negX:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+  - BGUID: Cliff2Wall_270
+    meshRef: CLIFF2WALL
+    rotationID: 270
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negX:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+  - BGUID: Island_Coast_0
+    meshRef: COAST_A
+    rotationID: 0
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      negZ:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+  - BGUID: Island_Coast_90
+    meshRef: COAST_A
+    rotationID: 90
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      negX:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+  - BGUID: Island_Coast_180
+    meshRef: COAST_A
+    rotationID: 180
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      negZ:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+  - BGUID: Island_Coast_270
+    meshRef: COAST_A
+    rotationID: 270
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      negX:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+  - BGUID: coast_curved_0
+    meshRef: COAST_CURVED
+    rotationID: 0
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      negX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+  - BGUID: coast_curved_90
+    meshRef: COAST_CURVED
+    rotationID: 90
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      negX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negZ:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+  - BGUID: coast_curved_180
+    meshRef: COAST_CURVED
+    rotationID: 180
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negX:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negZ:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+  - BGUID: coast_curved_270
+    meshRef: COAST_CURVED
+    rotationID: 270
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negX:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+  - BGUID: incurve_0
+    meshRef: CURVE_IN
+    rotationID: 0
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negX:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negZ:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+  - BGUID: incurve_90
+    meshRef: CURVE_IN
+    rotationID: 90
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negX:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+  - BGUID: incurve_180
+    meshRef: CURVE_IN
+    rotationID: 180
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+      negX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+  - BGUID: incurve_270
+    meshRef: CURVE_IN
+    rotationID: 270
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 0
+        FID: COAST_B
+      negX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negZ:
+        sym: 0
+        polarity: 1
+        FID: COAST_B
+  - BGUID: Island_Grass_0
+    meshRef: GRASS_A
+    rotationID: 0
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: NAN_A
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+  - BGUID: Grass2Cliff_0
+    meshRef: GRASS2CLIFF
+    rotationID: 0
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      negX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 1
+        FID: CLIFF_D
+      negZ:
+        sym: 0
+        polarity: 0
+        FID: CLIFF_D
+  - BGUID: Grass2Cliff_90
+    meshRef: GRASS2CLIFF
+    rotationID: 90
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 1
+        FID: CLIFF_D
+      negX:
+        sym: 0
+        polarity: 0
+        FID: CLIFF_D
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+  - BGUID: Grass2Cliff_180
+    meshRef: GRASS2CLIFF
+    rotationID: 180
+    weight: 1
+    sockets:
+      posX:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+      negX:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 0
+        polarity: 0
+        FID: CLIFF_D
+      negZ:
+        sym: 0
+        polarity: 1
+        FID: CLIFF_D
+  - BGUID: Grass2Cliff_270
+    meshRef: GRASS2CLIFF
+    rotationID: 270
+    weight: 1
+    sockets:
+      posX:
+        sym: 0
+        polarity: 0
+        FID: CLIFF_D
+      negX:
+        sym: 0
+        polarity: 1
+        FID: CLIFF_D
+      posY:
+        sym: 1
+        polarity: 0
+        FID: CLIFF_C
+      negY:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      posZ:
+        sym: 1
+        polarity: 0
+        FID: NAN_B
+      negZ:
+        sym: 1
+        polarity: 0
+        FID: GRASS_A
+  rotationalAxis: 2
+--- !u!4 &79900396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79900394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.43, y: 3.5713725, z: 0.7935644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &610525083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610525085}
+  - component: {fileID: 610525084}
+  m_Layer: 0
+  m_Name: LightManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &610525084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610525083}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654299d67d224d9419797bf460ab624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dirLight: {fileID: 1015576960}
+  lightingPresets: {fileID: 11400000, guid: 71ec651952334d74bb6941af0ddbea2f, type: 2}
+  TimeOfDay: 8.960315
+--- !u!4 &610525085
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610525083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.6715617, y: 3.472166, z: 2.2895336}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &667809311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 667809315}
+  - component: {fileID: 667809314}
+  - component: {fileID: 667809313}
+  - component: {fileID: 667809312}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &667809312
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667809311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &667809313
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667809311}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f923c003fa1367641b39a9e3f42a7a6b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &667809314
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667809311}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &667809315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667809311}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.1358, y: -0.051, z: 0.67}
+  m_LocalScale: {x: 0.18281336, y: 1, z: 0.15702116}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 673824980}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &673824977
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +2463,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 667809315}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -241,7 +2501,7 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!1 &938122095
+--- !u!1 &770096349
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,38 +2509,138 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 938122099}
-  - component: {fileID: 938122098}
-  - component: {fileID: 938122097}
-  - component: {fileID: 938122096}
+  - component: {fileID: 770096352}
+  - component: {fileID: 770096351}
+  - component: {fileID: 770096350}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &938122096
-MeshCollider:
+--- !u!114 &770096350
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938122095}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 770096349}
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &938122097
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!108 &770096351
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770096349}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2
+  m_Range: 5
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 0
+  m_ColorTemperature: 6372
+  m_UseColorTemperature: 1
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &770096352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770096349}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.34, y: 2.69, z: 2.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &899580719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 899580722}
+  - component: {fileID: 899580721}
+  - component: {fileID: 899580720}
+  m_Layer: 0
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &899580720
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938122095}
+  m_GameObject: {fileID: 899580719}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -294,7 +2654,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: f923c003fa1367641b39a9e3f42a7a6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -316,28 +2676,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &938122098
+--- !u!33 &899580721
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938122095}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &938122099
+  m_GameObject: {fileID: 899580719}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &899580722
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938122095}
+  m_GameObject: {fileID: 899580719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalPosition: {x: 5.64, y: 2.405, z: 3.955}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &945522163
 GameObject:
@@ -459,6 +2819,103 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &978826483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 978826487}
+  - component: {fileID: 978826486}
+  - component: {fileID: 978826485}
+  - component: {fileID: 978826484}
+  m_Layer: 3
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &978826484
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978826483}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &978826485
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978826483}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 582f857d2a7cb1543a0e901a64c07cb6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &978826486
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978826483}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &978826487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978826483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.79, y: 2.555, z: 3.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1015576959
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,14 +2945,14 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.660583, g: 0.62665355, b: 0.32755867, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -531,7 +2988,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -546,14 +3003,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015576959}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.11111441, y: 0.7997143, z: -0.5898734, w: 0.012648577}
+  m_LocalPosition: {x: 6.07, y: 9.1, z: 2.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 70.161, y: -206.479, z: -34.585}
 --- !u!114 &1015576962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,6 +3031,103 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &1280079497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280079501}
+  - component: {fileID: 1280079500}
+  - component: {fileID: 1280079499}
+  - component: {fileID: 1280079498}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1280079498
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280079497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1280079499
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280079497}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 582f857d2a7cb1543a0e901a64c07cb6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1280079500
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280079497}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1280079501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280079497}
+  m_LocalRotation: {x: -0, y: -0.6708514, z: -0, w: 0.7415919}
+  m_LocalPosition: {x: 3.278, y: 3.211, z: 0.94}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: -84.266, z: 0}
 --- !u!1 &1515724651
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +3170,494 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 945522164}
+  - {fileID: 1811078443}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1600919155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1600919159}
+  - component: {fileID: 1600919158}
+  - component: {fileID: 1600919157}
+  m_Layer: 0
+  m_Name: Sphere (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1600919157
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600919155}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f923c003fa1367641b39a9e3f42a7a6b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1600919158
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600919155}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1600919159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600919155}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.096, y: 2.219, z: -21.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1603602753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1603602757}
+  - component: {fileID: 1603602756}
+  - component: {fileID: 1603602755}
+  - component: {fileID: 1603602754}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1603602754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603602753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1603602755
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603602753}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1603602756
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603602753}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1603602757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603602753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.48, y: 4.34, z: 1.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1808477735
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.61144924
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.079465866
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -3.7493994e-33
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a5268c9a3605d84eb07bbe985585746,
+        type: 3}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a5268c9a3605d84eb07bbe985585746, type: 3}
+--- !u!1 &1811078442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1811078443}
+  - component: {fileID: 1811078445}
+  - component: {fileID: 1811078444}
+  m_Layer: 0
+  m_Name: LevelA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1811078443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811078442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1515724653}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!483693784 &1811078444
+TilemapRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811078442}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_ChunkSize: {x: 32, y: 32, z: 32}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_MaxChunkCount: 16
+  m_MaxFrameAge: 16
+  m_SortOrder: 0
+  m_Mode: 0
+  m_DetectChunkCullingBounds: 0
+  m_MaskInteraction: 0
+--- !u!1839735485 &1811078445
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811078442}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 1
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!1 &1824890243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1824890247}
+  - component: {fileID: 1824890246}
+  - component: {fileID: 1824890245}
+  - component: {fileID: 1824890244}
+  m_Layer: 0
+  m_Name: other Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1824890244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824890243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 0
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+--- !u!81 &1824890245
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824890243}
+  m_Enabled: 1
+--- !u!20 &1824890246
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824890243}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8600000, guid: 9b892f6a56b7e8242a0ce6f42c56e7d4, type: 2}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1824890247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824890243}
+  m_LocalRotation: {x: 0.08244098, y: -0.4968525, z: 0.12966171, w: 0.85412467}
+  m_LocalPosition: {x: 9.97, y: 3.48, z: -0.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 15.645, y: -59.227, z: 8.334}

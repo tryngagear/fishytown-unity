@@ -1,6 +1,6 @@
 #ifndef WB_FORWARD_LIT_INCLUDED
 #define WB_FORWARD_LIT_INCLUDED
-#define BEND_CONST 0.0000f
+#define BEND_CONST 0.002f
 // GLES2 has limited amount of interpolators
 #if defined(_PARALLAXMAP) && !defined(SHADER_API_GLES)
 #define REQUIRES_TANGENT_SPACE_VIEW_DIR_INTERPOLATOR
@@ -129,7 +129,7 @@ Varyings WorldbendLitPassVertex(Attributes IN)
 
     float4 vv = mul(unity_ObjectToWorld, IN.positionOS);
     vv.xyz -= _WorldSpaceCameraPos.xyz; 
-    vv = float4(0.0f, ((vv.z * vv.z) + (vv.x * vv.x)) * BEND_CONST, 0.0f, 0.0f);
+    vv = float4(0.0f, ((vv.z * vv.z) + (vv.x * vv.x)) * -BEND_CONST, 0.0f, 0.0f);
     //vv *= -vv;
     //vv *= _WorldBend;
     //vv = float4(0.0f, vv.y, 0.0f, 0.0f); //option 2
