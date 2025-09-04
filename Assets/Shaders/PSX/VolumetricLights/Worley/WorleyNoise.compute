@@ -1,0 +1,133 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSNormalize
+#pragma kernel CSWorley
+
+static const int numThreads = 8;
+static const int minMaxAccuracy = 10000000;
+
+uint resolution;
+StructuredBuffer<float3> pointsA;
+StructuredBuffer<float3> pointsB;
+StructuredBuffer<float3> pointsC;
+
+int numCellsA;
+int numCellsB;
+int numCellsC;
+
+float4 channelMask;
+float persitence;
+bool invertNoise;
+int tile;
+
+static const int3 offsets[] =
+{
+     // centre
+    int3(0,0,0),
+    // front face
+    int3(0,0,1),
+    int3(-1,1,1),
+    int3(-1,0,1),
+    int3(-1,-1,1),
+    int3(0,1,1),
+    int3(0,-1,1),
+    int3(1,1,1),
+    int3(1,0,1),
+    int3(1,-1,1),
+    // back face
+    int3(0,0,-1),
+    int3(-1,1,-1),
+    int3(-1,0,-1),
+    int3(-1,-1,-1),
+    int3(0,1,-1),
+    int3(0,-1,-1),
+    int3(1,1,-1),
+    int3(1,0,-1),
+    int3(1,-1,-1),
+    // ring around centre
+    int3(-1,1,0),
+    int3(-1,0,0),
+    int3(-1,-1,0),
+    int3(0,1,0),
+    int3(0,-1,0),
+    int3(1,1,0),
+    int3(1,0,0),
+    int3(1,-1,0)
+};
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture3D<float4> Result;
+RWStructuredBuffer<int> minMax;
+
+float maxComponent(float3 vec){
+    return max(vec.x, max(vec.y, vec.z));
+}
+
+float minComponent(float3 vec){
+    return min(vec.x, min(vec.y, vec.z));
+}
+
+float maxComponent(float2 vec){
+    return max(vec.x, vec.y);
+}
+
+float minComponent(float2 vec){
+    return min(vec.x, vec.y);
+}
+
+float worley(StructuredBuffer<float3> points, int numCells, float3 samplePos){
+    samplePos = (samplePos*tile)%1;
+    int3 cellID = floor(samplePos*numCells);
+    float minSqrDst = 1;
+
+    for(int cellOffsetID = 0; cellOffsetID < 27; cellOffsetID++){
+        int3 adjID = cellID + offsets[cellOffsetID];
+
+        if(minComponent(adjID) == -1 || maxComponent(adjID) == numCells){
+            int3 wrappedID = (adjID + numCells)%(uint3)numCells;
+            int adjCellID = wrappedID.x + numCells * (wrappedID.y+wrappedID.z*numCells);
+            float3 wrappedPoint = points[adjCellID];
+            for(int wrapOffsetIndex = 0; wrapOffsetIndex < 27;wrapOffsetIndex++){
+                float3 sampleOffset = (samplePos - (wrappedPoint+offsets[wrapOffsetIndex]));
+                minSqrDst = min(minSqrDst, dot(sampleOffset,sampleOffset));
+            }
+        }else{
+            int adjCellID = adjID.x + numCells * (adjID.y+adjID.z*numCells);
+            float3 sampleOffset = samplePos - points[adjCellID];
+            minSqrDst = min(minSqrDst, dot(sampleOffset, sampleOffset));
+        }
+    }
+    return sqrt(minSqrDst);
+}
+
+[numthreads(numThreads,numThreads,numThreads)]
+void CSWorley (uint3 id : SV_DispatchThreadID)
+{
+   float3 pos = id/(float)resolution;
+   float layerA = worley(pointsA,numCellsA,pos);
+   float layerB = worley(pointsB,numCellsA,pos);
+   float layerC = worley(pointsC,numCellsA,pos);
+
+    float noiseSum = layerA+(layerB*persitence)+(layerC*persitence*persitence);
+    float maxVal = 1+(persitence)+(persitence*persitence);
+
+   noiseSum /= maxVal;    
+   if(invertNoise){
+        noiseSum = 1-noiseSum;
+    }
+
+    int val = (int)(noiseSum*minMaxAccuracy);
+    InterlockedMin(minMax[0],val);
+    InterlockedMax(minMax[1],val);
+
+    Result[id] = Result[id]*(1-channelMask)+noiseSum*channelMask;
+}
+
+[numthreads(numThreads,numThreads,numThreads)]
+void CSNormalize(uint3 id : SV_DispatchThreadID){
+    float minVal = (float)minMax[0]/minMaxAccuracy;
+    float maxVal = (float)minMax[1]/minMaxAccuracy;
+    float4 normalizedVal = (Result[id]-minVal)/(maxVal-minVal);
+
+    Result[id] = Result[id]*(1-channelMask)+normalizedVal*channelMask;
+}
+

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b43af96a6e39140b6452eab3b1e259, type: 3}
+  m_Name: TestTile
+  m_EditorClassIdentifier: 
+  refObj: {fileID: 3195849151412837344, guid: 23f08015694c0dd4880d8f3c535cd6d6, type: 3}
+  BGUID: Test
+  meshRef: Test
+  rotationList: 000000005a000000b40000000e010000
+  weight: 0.5
+  sockets:
+    posX:
+      sym: 0
+      polarity: 1
+      FID: TEST
+    negX:
+      sym: 0
+      polarity: 0
+      FID: TEST
+    posY:
+      sym: 1
+      polarity: 0
+      FID: NANA
+    negY:
+      sym: 1
+      polarity: 0
+      FID: NANB
+    posZ:
+      sym: 1
+      polarity: 0
+      FID: SAND
+    negZ:
+      sym: 1
+      polarity: 0
+      FID: GRASS

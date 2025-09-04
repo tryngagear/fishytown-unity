@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b43af96a6e39140b6452eab3b1e259, type: 3}
+  m_Name: ISCoastInCurved
+  m_EditorClassIdentifier: 
+  refObj: {fileID: 3213045919376962185, guid: 04080cf9f8937f443ae4a5d281486f75, type: 3}
+  BGUID: incurve
+  meshRef: CURVE_IN
+  rotationList: 000000005a000000b40000000e010000
+  weight: 1
+  sockets:
+    posX:
+      sym: 1
+      polarity: 0
+      FID: GRASS_A
+    negX:
+      sym: 0
+      polarity: 1
+      FID: COAST_B
+    posY:
+      sym: 1
+      polarity: 0
+      FID: NAN_A
+    negY:
+      sym: 1
+      polarity: 0
+      FID: NAN_B
+    posZ:
+      sym: 1
+      polarity: 0
+      FID: GRASS_A
+    negZ:
+      sym: 0
+      polarity: 0
+      FID: COAST_B

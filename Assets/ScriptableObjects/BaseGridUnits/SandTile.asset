@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b43af96a6e39140b6452eab3b1e259, type: 3}
+  m_Name: SandTile
+  m_EditorClassIdentifier: 
+  refObj: {fileID: 704139530138981641, guid: 93d25a7a2c50d79429a21adc9d532432, type: 3}
+  BGUID: Sand
+  meshRef: Sand
+  rotationList: 00000000
+  weight: 1
+  sockets:
+    posX:
+      sym: 1
+      polarity: 0
+      FID: SAND
+    negX:
+      sym: 1
+      polarity: 0
+      FID: SAND
+    posY:
+      sym: 1
+      polarity: 0
+      FID: NANA
+    negY:
+      sym: 1
+      polarity: 0
+      FID: NANB
+    posZ:
+      sym: 1
+      polarity: 0
+      FID: SAND
+    negZ:
+      sym: 1
+      polarity: 0
+      FID: SAND
